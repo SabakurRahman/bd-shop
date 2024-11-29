@@ -6,7 +6,10 @@ const Navbar = () => {
   console.log(visible);
   return (
     <div className="flex items-center justify-between py-5 font-medium relative">
-      <img src={assets.logo} alt="logo" className="w-36" />
+      <Link to="/">
+        <img src={assets.logo} alt="logo" className="h-[71px] w-[247px]" />
+      </Link>
+
       <ul className="hidden sm:flex gap-5 text-sm text-gray-700">
         <NavLink to="/" className="flex flex-col items-center gap-1">
           <p>HOME</p>
